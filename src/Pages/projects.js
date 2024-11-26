@@ -23,7 +23,8 @@ const Projects = () => {
   }, [projects.length]);
 
   return (
-    <div className="page-cont">   
+    <div className="page-cont">
+           
         <div className="carousel-container">
       <div
         className="carousel"
