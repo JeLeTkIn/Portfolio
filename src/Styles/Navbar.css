@@ -1,0 +1,28 @@
+.navbar {
+    background-color: #aa8f66;
+    color:#FFEEDB;
+    position: sticky;
+    top: 0;
+}
+.nav-links{
+color: #61C9A8;
+text-decoration: none;
+padding: 5px 10px;
+border-radius: 5px;
+background-color: #FFEEDB;
+font-family: Arial, sans-serif;
+font-weight: bold;
+height: 40px;
+margin-top: 10px;
+display: flex;
+align-items: center;
+}
+.nav-links:hover {
+    background-color: #61C9A8;
+    color: #BA3B46;
+}
+.nav-container{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}

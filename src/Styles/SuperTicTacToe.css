@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.sub-board {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: repeat(3, 60px);
+  gap: 5px;
+  justify-content: center;
+  border: 3px solid #333;
+  position: relative;
+}
+
+.sub-board.active {
+  border-color: #ff6600; /* Подсветка активной под-сетки */
+  box-shadow: 0 0 10px rgba(255, 102, 0, 0.8);
+}
+
+.sub-board.X {
+  border-color: red;
+  background-color: #ffcccc;
+}
+
+.sub-board.O {
+  border-color: blue;
+  background-color: #cceeff;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cell.X {
+  background-color: #ffcccc;
+  color: red;
+}
+
+.cell.O {
+  background-color: #cceeff;
+  color: blue;
+}
+
+.cell.disabled {
+  pointer-events: none; /* Отключаем клики на клетках большой сетки с победителем */
+}
+
+.cell:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+}
+
+.current-player {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333;
+}

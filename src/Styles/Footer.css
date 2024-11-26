@@ -1,0 +1,27 @@
+.footer-links a{
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+    color: #FFEEDB;
+}
+.footer-links a:hover{
+    background-color: #FFEEDB;
+    color: #61C9A8;
+}
+.rights{
+    font-weight: 100;
+    font-size: small;
+    color: #FFEEDB;
+}
+.footer-links{
+    display: flex;
+    gap: 10px;
+}
+.footer{
+    background-color: #AA8F66;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
