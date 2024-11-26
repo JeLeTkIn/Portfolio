@@ -6,7 +6,7 @@ const Projects = () => {
   const projects = [
     { 
       image: "https://tictactoefree.com/img/pole_ultimate.png", 
-      link: "/project1",
+      link: "https://supertictactoejel.netlify.app/",
       description: "SuperTicTacToe",
     },
     { 
@@ -32,7 +32,7 @@ const Projects = () => {
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {projects.map((project, i) => (
-          <Link 
+          <a 
             key={i} 
             to={project.link} 
             className="project"
@@ -41,7 +41,7 @@ const Projects = () => {
           >
             <img src={project.image} alt={`project ${i + 1}`} />
             <p>{project.description}</p>
-          </Link>
+          </a>
         ))}
       </div>
     </div>
