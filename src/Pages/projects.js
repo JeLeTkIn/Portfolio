@@ -11,7 +11,7 @@ const Projects = () => {
     },
     { 
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS36nHaLO5oTQqh2IHs6IcqAWH62o1pxpzGjA&sg", 
-        link: "/project2",
+        link: "https://jelaimtrainer.netlify.app/",
         description: "AimTrainer",
     },
   ];
@@ -34,7 +34,7 @@ const Projects = () => {
         {projects.map((project, i) => (
           <a 
             key={i} 
-            to={project.link} 
+            href={project.link} 
             className="project"
             target="_blank" 
             rel="noopener noreferrer"
