@@ -10,7 +10,6 @@ const Navbar = () => {
                 <Link to="/" className="nav-links">Home</Link>
                 <Link to="/about-me" className="nav-links">About Me</Link>
                 <Link to="/projects" className="nav-links">Projects</Link>
-                <Link to="/project1" className="nav-links">Projects</Link>
             </div>
         </nav>
     );

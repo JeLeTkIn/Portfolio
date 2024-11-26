@@ -5,12 +5,12 @@ const Projects = () => {
   const projects = [
     { 
       image: "https://tictactoefree.com/img/pole_ultimate.png", 
-      link: "project1",
+      link: "/project1",
       description: "SuperTicTacToe",
     },
     { 
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS36nHaLO5oTQqh2IHs6IcqAWH62o1pxpzGjA&sg", 
-        link: "project2",
+        link: "/project2",
         description: "AimTrainer",
     },
   ];
@@ -24,23 +24,23 @@ const Projects = () => {
 
   return (
     <div className="page-cont">
-           
+
         <div className="carousel-container">
       <div
         className="carousel"
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {projects.map((project, i) => (
-          <a 
+          <Link 
             key={i} 
-            href={project.link} 
+            to={project.link} 
             className="project"
             target="_blank" 
             rel="noopener noreferrer"
           >
             <img src={project.image} alt={`Проект ${i + 1}`} />
             <p>{project.description}</p>
-          </a>
+          </Link>
         ))}
       </div>
     </div>
