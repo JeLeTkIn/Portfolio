@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const [index, setIndex] = useState(0); // Индекс текущего проекта
@@ -38,7 +39,7 @@ const Projects = () => {
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <img src={project.image} alt={`Проект ${i + 1}`} />
+            <img src={project.image} alt={`project ${i + 1}`} />
             <p>{project.description}</p>
           </Link>
         ))}
