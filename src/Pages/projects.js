@@ -5,12 +5,12 @@ const Projects = () => {
   const projects = [
     { 
       image: "https://tictactoefree.com/img/pole_ultimate.png", 
-      link: "projects/1",
+      link: "project1",
       description: "SuperTicTacToe",
     },
     { 
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS36nHaLO5oTQqh2IHs6IcqAWH62o1pxpzGjA&sg", 
-        link: "projects/2",
+        link: "project2",
         description: "AimTrainer",
     },
   ];
